@@ -1,0 +1,11 @@
+<!doctype html>
+<html ng-app="app" ng-controller="MasterController">
+  <head>
+    <meta charset="{{MasterPage.getEncoding()}}">
+    <title>{{MasterPage.getTitle()}}</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="<%= context['browserify.bundle'] %>"></script>
+    <div ui-view></div>
+  </body>
+</html>

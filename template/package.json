@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "angular": "",
+    "angular-animate": "",
+    "angular-cookies": "",
+    "angular-resource": "",
+    "angular-route": "",
+    "angular-sanitize": "",
+    "angular-touch": "",
+    "angular-ui-bootstrap": "",
+    "angular-ui-router": "",
+    "bootstrap": "",
+    "font-awesome": "",
+    "es5-shim": "",
+    "jquery": "",
+    "json3": ""
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "angular": "./node_modules/angular/angular.js",
+    "angular-bootstrap": "./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-0.12.0.js",
+    "angular-bootstrap-tpls": "./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls-0.12.0.js"
+  },
+  "browserify-shim": {
+    "jquery": {
+      "exports": "$"
+    },
+    "angular": {
+      "exports": "angular",
+      "depends": "jquery"
+    }
+  }
+}
